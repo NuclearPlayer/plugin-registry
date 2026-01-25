@@ -1,0 +1,101 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/NuclearPlayer/plugin-registry/master/schema/plugins.schema.json",
+  "title": "Nuclear Plugin Registry",
+  "description": "Schema for the Nuclear plugin registry index",
+  "type": "object",
+  "required": [
+    "plugins"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "Reference to this schema"
+    },
+    "plugins": {
+      "type": "array",
+      "description": "List of registered plugins",
+      "items": {
+        "$ref": "#/$defs/plugin"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "plugin": {
+      "type": "object",
+      "description": "A plugin entry in the registry",
+      "required": [
+        "id",
+        "name",
+        "description",
+        "author",
+        "repo",
+        "category",
+        "addedAt"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier, must match the plugin's package.json name",
+          "pattern": "^[a-z0-9]([a-z0-9-]*[a-z0-9])?$",
+          "minLength": 2,
+          "maxLength": 64
+        },
+        "name": {
+          "type": "string",
+          "description": "Human-readable display name",
+          "minLength": 2,
+          "maxLength": 64
+        },
+        "description": {
+          "type": "string",
+          "description": "Short description of what your plugin does",
+          "minLength": 10,
+          "maxLength": 200
+        },
+        "author": {
+          "type": "string",
+          "description": "Your name or username",
+          "minLength": 1,
+          "maxLength": 64
+        },
+        "repo": {
+          "type": "string",
+          "description": "Github repository in owner/repo format",
+          "pattern": "^[a-zA-Z0-9_.-]+/[a-zA-Z0-9_.-]+$"
+        },
+        "category": {
+          "type": "string",
+          "description": "Plugin category",
+          "enum": [
+            "streaming",
+            "metadata",
+            "lyrics",
+            "scrobbling",
+            "other"
+          ]
+        },
+        "tags": {
+          "type": "array",
+          "description": "Optional searchable tags",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 32,
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "maxItems": 10,
+          "uniqueItems": true
+        },
+        "addedAt": {
+          "type": "string",
+          "description": "ISO date when the plugin was added to the registry",
+          "format": "date",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}
