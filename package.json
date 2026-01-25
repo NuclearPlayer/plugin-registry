@@ -4,7 +4,8 @@
   "description": "Nuclear plugin registry",
   "type": "module",
   "scripts": {
-    "validate": "tsx scripts/validate.ts"
+    "validate": "tsx scripts/validate.ts",
+    "check-plugins": "tsx scripts/check-plugins.ts"
   },
   "devDependencies": {
     "@types/node": "^25.0.10",
