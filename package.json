@@ -1,0 +1,14 @@
+{
+  "name": "plugin-registry",
+  "version": "1.0.0",
+  "description": "Nuclear plugin registry",
+  "type": "module",
+  "scripts": {
+    "validate": "tsx scripts/validate.ts"
+  },
+  "devDependencies": {
+    "json-schema-library": "^9.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}
