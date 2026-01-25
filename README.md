@@ -28,7 +28,6 @@ Each plugin entry in `plugins.json` looks like this:
 ```json
 {
   "id": "example-plugin",
-  "name": "Example Plugin",
   "description": "Short description of what this plugin does",
   "author": "github-username",
   "repo": "owner/repo-name",

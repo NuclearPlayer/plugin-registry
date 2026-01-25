@@ -51,7 +51,6 @@ The `plugin.zip` should contain your built plugin files at the root level.
 ```json
 {
   "id": "your-plugin-id",
-  "name": "Your Plugin Name",
   "description": "A short description (max 200 chars)",
   "author": "your-github-username",
   "repo": "your-username/your-plugin-repo",
