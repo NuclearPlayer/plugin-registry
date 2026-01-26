@@ -1,4 +1,5 @@
 {
   "$schema": "./schema/plugins.schema.json",
-  "plugins": []
+  "plugins": [],
+  "version": 1
 }

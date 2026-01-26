@@ -9,6 +9,7 @@ interface Plugin {
 
 interface PluginRegistry {
   plugins: Plugin[];
+  version?: number;
 }
 
 function getChangedRepos(baseBranch: string): string[] {

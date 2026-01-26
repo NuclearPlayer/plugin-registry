@@ -12,6 +12,10 @@
       "type": "string",
       "description": "Reference to this schema"
     },
+    "version": {
+      "type": "number",
+      "description": "Schema version number"
+    },
     "plugins": {
       "type": "array",
       "description": "List of registered plugins",

@@ -20,6 +20,7 @@ interface Plugin {
 
 interface PluginRegistry {
   $schema?: string;
+  version?: number;
   plugins: Plugin[];
 }
 
