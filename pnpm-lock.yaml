@@ -9,16 +9,16 @@ importers:
   .:
     devDependencies:
       '@types/node':
-        specifier: ^22.0.0
+        specifier: ^22.10.2
         version: 22.19.7
       json-schema-library:
-        specifier: ^9.0.0
-        version: 9.3.5
+        specifier: ^10.5.2
+        version: 10.5.2
       tsx:
-        specifier: ^4.0.0
+        specifier: ^4.21.0
         version: 4.21.0
       typescript:
-        specifier: ^5.0.0
+        specifier: ^5.7.3
         version: 5.9.3
 
 packages:
@@ -182,6 +182,9 @@ packages:
   '@sagold/json-pointer@5.1.2':
     resolution: {integrity: sha512-+wAhJZBXa6MNxRScg6tkqEbChEHMgVZAhTHVJ60Y7sbtXtu9XA49KfUkdWlS2x78D6H9nryiKePiYozumauPfA==}
 
+  '@sagold/json-pointer@7.2.1':
+    resolution: {integrity: sha512-8EX4r5Royl5M3qNPTh5W5njdOtRqbWgQfVv26DbzjGj2/55b60EqvbiqUIglzw7fADfY/Io6jDJxGNJHmC+g8g==}
+
   '@sagold/json-query@6.2.0':
     resolution: {integrity: sha512-7bOIdUE6eHeoWtFm8TvHQHfTVSZuCs+3RpOKmZCDBIOrxpvF/rNFTeuvIyjHva/RR0yVS3kQtr+9TW72LQEZjA==}
 
@@ -221,8 +224,8 @@ packages:
   get-tsconfig@4.13.0:
     resolution: {integrity: sha512-1VKTZJCwBrvbd+Wn3AOgQP/2Av+TfTCOlE4AcRJE72W1ksZXbAx8PPBR9RzgTeSPzlPMHrbANMH3LbltH73wxQ==}
 
-  json-schema-library@9.3.5:
-    resolution: {integrity: sha512-5eBDx7cbfs+RjylsVO+N36b0GOPtv78rfqgf2uON+uaHUIC62h63Y8pkV2ovKbaL4ZpQcHp21968x5nx/dFwqQ==}
+  json-schema-library@10.5.2:
+    resolution: {integrity: sha512-dXFWnglpSz1lf0omz3wf6oq9+bwVRcAEqId9vTRSfDDqu/mwdmq9m057B+NP7Hw1dkGWfYELLvehTWtLs4tITQ==}
 
   moo@0.5.2:
     resolution: {integrity: sha512-iSAJLHYKnX41mKcJKjqvnAN9sf0LMDTXDEvFv+ffuRR9a1MIuXLjMNL6EsnDHSkKLTWNqQQ5uo61P4EbU4NU+Q==}
@@ -230,6 +233,10 @@ packages:
   nearley@2.20.1:
     resolution: {integrity: sha512-+Mc8UaAebFzgV+KpI5n7DasuuQCHA89dmwm7JXw3TV43ukfNQ9DnBH3Mdb2g/I4Fdxc26pwimBWvjIw0UAILSQ==}
     hasBin: true
+
+  punycode@2.3.1:
+    resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
+    engines: {node: '>=6'}
 
   railroad-diagrams@1.0.0:
     resolution: {integrity: sha512-cz93DjNeLY0idrCNOH6PviZGRN9GJhsdm9hpn1YCS879fj4W+x5IFJhhkRZcwVgMmFF7R82UA/7Oh+R8lLZg6A==}
@@ -261,6 +268,9 @@ packages:
 
   undici-types@6.21.0:
     resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
+
+  uri-js@4.4.1:
+    resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
 
   valid-url@1.0.9:
     resolution: {integrity: sha512-QQDsV8OnSf5Uc30CKSwG9lnhMPe6exHtTXLRYX8uMwKENy640pU+2BgBL0LRbDh/eYRahNCS7aewCx0wf3NYVA==}
@@ -347,6 +357,8 @@ snapshots:
 
   '@sagold/json-pointer@5.1.2': {}
 
+  '@sagold/json-pointer@7.2.1': {}
+
   '@sagold/json-query@6.2.0':
     dependencies:
       '@sagold/json-pointer': 5.1.2
@@ -404,14 +416,15 @@ snapshots:
     dependencies:
       resolve-pkg-maps: 1.0.0
 
-  json-schema-library@9.3.5:
+  json-schema-library@10.5.2:
     dependencies:
-      '@sagold/json-pointer': 5.1.2
+      '@sagold/json-pointer': 7.2.1
       '@sagold/json-query': 6.2.0
       deepmerge: 4.3.1
       fast-copy: 3.0.2
       fast-deep-equal: 3.1.3
       smtp-address-parser: 1.0.10
+      uri-js: 4.4.1
       valid-url: 1.0.9
 
   moo@0.5.2: {}
@@ -422,6 +435,8 @@ snapshots:
       moo: 0.5.2
       railroad-diagrams: 1.0.0
       randexp: 0.4.6
+
+  punycode@2.3.1: {}
 
   railroad-diagrams@1.0.0: {}
 
@@ -448,5 +463,9 @@ snapshots:
   typescript@5.9.3: {}
 
   undici-types@6.21.0: {}
+
+  uri-js@4.4.1:
+    dependencies:
+      punycode: 2.3.1
 
   valid-url@1.0.9: {}
