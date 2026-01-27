@@ -1,7 +1,7 @@
 import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, resolve } from "node:path";
-import { Draft07 } from "json-schema-library";
+import { compileSchema } from "json-schema-library";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const PROJECT_ROOT = resolve(__dirname, "..");
@@ -51,8 +51,8 @@ const allErrors: string[] = [];
 const schema = loadJSON<object>(SCHEMA_PATH, "schema");
 const registry = loadJSON<PluginRegistry>(PLUGINS_PATH, "plugin registry");
 
-const validator = new Draft07(schema);
-const schemaErrors = validator.validate(registry);
+const validator = compileSchema(schema);
+const schemaErrors = validator.validate(registry).errors;
 
 for (const error of schemaErrors) {
   allErrors.push(`${error.message} (at ${error.data?.pointer || "/"})`);
