@@ -3,12 +3,16 @@
   "plugins": [
     {
       "id": "nuclear-plugin-discogs",
+      "name": "Discogs",
       "description": "Fetch artist and album metadata from Discogs",
       "author": "nukeop",
       "repo": "NuclearPlayer/nuclear-plugin-discogs",
       "category": "metadata",
-      "tags": ["discogs", "metadata"],
-      "addedAt": "2026-01-27"
+      "tags": [
+        "discogs",
+        "metadata"
+      ],
+      "addedAt": "2026-01-27T00:00:00Z"
     }
   ],
   "version": 1

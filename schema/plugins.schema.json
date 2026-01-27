@@ -31,6 +31,7 @@
       "description": "A plugin entry in the registry",
       "required": [
         "id",
+        "name",
         "description",
         "author",
         "repo",
@@ -43,6 +44,12 @@
           "description": "Unique identifier, must match the plugin's package.json name",
           "pattern": "^[a-z0-9]([a-z0-9-]*[a-z0-9])?$",
           "minLength": 2,
+          "maxLength": 64
+        },
+        "name": {
+          "type": "string",
+          "description": "Display name shown in the plugin store",
+          "minLength": 1,
           "maxLength": 64
         },
         "description": {
@@ -87,9 +94,8 @@
         },
         "addedAt": {
           "type": "string",
-          "description": "ISO date when the plugin was added to the registry",
-          "format": "date",
-          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+          "description": "ISO 8601 datetime when the plugin was added to the registry",
+          "format": "date-time"
         }
       },
       "additionalProperties": false
