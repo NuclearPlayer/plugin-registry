@@ -13,6 +13,20 @@
         "metadata"
       ],
       "addedAt": "2026-01-27T00:00:00Z"
+    },
+    {
+      "id": "nuclear-plugin-youtube",
+      "name": "YouTube",
+      "description": "A streaming provider plugin that plays audio from Youtube using yt-dlp",
+      "author": "nukeop",
+      "repo": "NuclearPlayer/nuclear-plugin-youtube",
+      "category": "streaming",
+      "tags": [
+        "youtube",
+        "streaming",
+        "yt-dlp"
+      ],
+      "addedAt": "2026-01-28T00:00:00Z"
     }
   ],
   "version": 1
