@@ -27,6 +27,19 @@
         "yt-dlp"
       ],
       "addedAt": "2026-01-28T00:00:00Z"
+    },
+    {
+      "id": "nuclear-plugin-bandcamp",
+      "name": "Bandcamp",
+      "description": "Fetch artist and album metadata from Bandcamp",
+      "author": "nukeop",
+      "repo": "NuclearPlayer/nuclear-plugin-bandcamp",
+      "category": "metadata",
+      "tags": [
+        "bandcamp",
+        "metadata"
+      ],
+      "addedAt": "2026-02-12T00:00:00Z"
     }
   ],
   "version": 1
