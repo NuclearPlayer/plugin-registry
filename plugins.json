@@ -31,13 +31,14 @@
     {
       "id": "nuclear-plugin-bandcamp",
       "name": "Bandcamp",
-      "description": "Fetch artist and album metadata from Bandcamp",
+      "description": "Browse and play music from Bandcamp",
       "author": "nukeop",
       "repo": "NuclearPlayer/nuclear-plugin-bandcamp",
       "category": "metadata",
       "tags": [
         "bandcamp",
-        "metadata"
+        "metadata",
+        "streaming"
       ],
       "addedAt": "2026-02-12T00:00:00Z"
     }
