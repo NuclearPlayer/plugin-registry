@@ -41,6 +41,20 @@
         "streaming"
       ],
       "addedAt": "2026-02-12T00:00:00Z"
+    },
+    {
+      "id": "nuclear-plugin-soundcloud",
+      "name": "SoundCloud",
+      "description": "Browse and play music from SoundCloud",
+      "author": "nukeop",
+      "repo": "NuclearPlayer/nuclear-plugin-soundcloud",
+      "category": "streaming",
+      "tags": [
+        "soundcloud",
+        "metadata",
+        "streaming"
+      ],
+      "addedAt": "2026-02-15T00:00:00Z"
     }
   ],
   "version": 1
