@@ -55,6 +55,18 @@
         "streaming"
       ],
       "addedAt": "2026-02-15T00:00:00Z"
+    },
+    {
+      "id": "nuclear-plugin-something",
+      "name": "Spotify",
+      "description": "Fetch artist, album, and track metadata from Spotify",
+      "author": "nukeop",
+      "repo": "NuclearPlayer/nuclear-plugin-something",
+      "category": "metadata",
+      "tags": [
+        "metadata"
+      ],
+      "addedAt": "2026-02-15T00:00:00Z"
     }
   ],
   "version": 1
