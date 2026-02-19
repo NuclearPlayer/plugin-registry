@@ -67,6 +67,20 @@
         "metadata"
       ],
       "addedAt": "2026-02-15T00:00:00Z"
+    },
+    {
+      "id": "nuclear-plugin-deezer-dashboard",
+      "name": "Deezer Dashboard",
+      "description": "Charts, trending artists, editorial playlists, and new releases from Deezer",
+      "author": "nukeop",
+      "repo": "NuclearPlayer/nuclear-plugin-deezer-dashboard",
+      "category": "dashboard",
+      "tags": [
+        "deezer",
+        "dashboard",
+        "charts"
+      ],
+      "addedAt": "2026-02-19T00:00:00Z"
     }
   ],
   "version": 1
