@@ -81,6 +81,20 @@
         "charts"
       ],
       "addedAt": "2026-02-19T00:00:00Z"
+    },
+    {
+      "id": "nuclear-plugin-musicbrainz",
+      "name": "MusicBrainz",
+      "description": "Search, artist pages, and album details from MusicBrainz with Wikipedia bios and Cover Art Archive artwork",
+      "author": "nukeop",
+      "repo": "NuclearPlayer/nuclear-plugin-musicbrainz",
+      "category": "metadata",
+      "tags": [
+        "musicbrainz",
+        "metadata",
+        "wikipedia"
+      ],
+      "addedAt": "2026-02-22T00:00:00Z"
     }
   ],
   "version": 1
