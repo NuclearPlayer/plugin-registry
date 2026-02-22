@@ -95,6 +95,20 @@
         "wikipedia"
       ],
       "addedAt": "2026-02-22T00:00:00Z"
+    },
+    {
+      "id": "nuclear-plugin-listenbrainz-dashboard",
+      "name": "ListenBrainz Dashboard",
+      "description": "Charts, trending artists, top albums, and new releases from ListenBrainz",
+      "author": "nukeop",
+      "repo": "NuclearPlayer/nuclear-plugin-listenbrainz-dashboard",
+      "category": "dashboard",
+      "tags": [
+        "listenbrainz",
+        "dashboard",
+        "charts"
+      ],
+      "addedAt": "2026-02-22T00:00:00Z"
     }
   ],
   "version": 1
