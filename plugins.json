@@ -129,7 +129,7 @@
       "description": "Import YouTube playlists by URL",
       "author": "nukeop",
       "repo": "NuclearPlayer/nuclear-plugin-youtube-playlists",
-      "category": "playlists",
+      "category": "other",
       "tags": [
         "youtube",
         "playlists",
