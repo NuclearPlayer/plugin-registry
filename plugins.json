@@ -136,6 +136,23 @@
         "yt-dlp"
       ],
       "addedAt": "2026-03-07T00:00:00Z"
+    },
+    {
+      "id": "nuclear-plugin-monochrome",
+      "name": "Monochrome",
+      "description": "Browse and play lossless music via Monochrome, with dashboard, playlists, and metadata",
+      "author": "nukeop",
+      "repo": "NuclearPlayer/nuclear-plugin-monochrome",
+      "category": "streaming",
+      "tags": [
+        "monochrome",
+        "tidal",
+        "streaming",
+        "metadata",
+        "dashboard",
+        "lossless"
+      ],
+      "addedAt": "2026-04-04T00:00:00Z"
     }
   ],
   "version": 1
