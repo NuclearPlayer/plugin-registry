@@ -153,6 +153,22 @@
         "lossless"
       ],
       "addedAt": "2026-04-04T00:00:00Z"
+    },
+    {
+      "id": "nuclear-plugin-khinsider",
+      "name": "KHInsider",
+      "description": "Browse and play video game soundtracks from KHInsider",
+      "author": "nukeop",
+      "repo": "NuclearPlayer/nuclear-plugin-khinsider",
+      "category": "metadata",
+      "tags": [
+        "khinsider",
+        "vgm",
+        "game-soundtracks",
+        "metadata",
+        "streaming"
+      ],
+      "addedAt": "2026-04-08T00:00:00Z"
     }
   ],
   "version": 1
