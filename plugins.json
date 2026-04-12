@@ -169,6 +169,22 @@
         "streaming"
       ],
       "addedAt": "2026-04-08T00:00:00Z"
+    },
+    {
+      "id": "nuclear-youtube-metadata-plugin",
+      "name": "YouTube Metadata",
+      "description": "Search, stream, and discover music directly from YouTube",
+      "author": "madoslinux",
+      "repo": "madoslinux/nuclear-youtube-metadata-plugin",
+      "category": "metadata",
+      "tags": [
+        "youtube",
+        "metadata",
+        "streaming",
+        "discovery",
+        "yt-dlp"
+      ],
+      "addedAt": "2026-04-12T00:00:00Z"
     }
   ],
   "version": 1
