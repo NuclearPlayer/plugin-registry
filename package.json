@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "validate": "tsx scripts/validate.ts",
-    "check-plugins": "tsx scripts/check-plugins.ts"
+    "check-plugins": "tsx scripts/check-plugins.ts",
+    "update-versions": "tsx scripts/update-versions.ts"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",
