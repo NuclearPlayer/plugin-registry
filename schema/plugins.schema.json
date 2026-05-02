@@ -81,6 +81,33 @@
             "other"
           ]
         },
+        "categories": {
+          "type": "array",
+          "description": "Plugin categories (replaces category)",
+          "items": {
+            "type": "string",
+            "enum": [
+              "streaming",
+              "metadata",
+              "lyrics",
+              "scrobbling",
+              "dashboard",
+              "other"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "version": {
+          "type": "string",
+          "description": "Latest released version",
+          "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]"
+        },
+        "downloadUrl": {
+          "type": "string",
+          "description": "Direct download URL for the latest plugin.zip",
+          "format": "uri"
+        },
         "tags": {
           "type": "array",
           "description": "Optional searchable tags",
