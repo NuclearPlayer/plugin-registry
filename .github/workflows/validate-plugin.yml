@@ -42,3 +42,15 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           BASE_BRANCH: ${{ github.base_ref }}
         run: pnpm check-plugins
+
+  purge-cdn-cache:
+    name: Purge jsDelivr cache
+    needs: validate
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Purge plugins.json cache
+        uses: gacts/purge-jsdelivr-cache@v1
+        with:
+          url: https://cdn.jsdelivr.net/gh/NuclearPlayer/plugin-registry@master/plugins.json
