@@ -8,7 +8,9 @@
       "author": "nukeop",
       "repo": "NuclearPlayer/nuclear-plugin-discogs",
       "category": "metadata",
-      "categories": ["metadata"],
+      "categories": [
+        "metadata"
+      ],
       "tags": [
         "discogs",
         "metadata"
@@ -24,7 +26,9 @@
       "author": "nukeop",
       "repo": "NuclearPlayer/nuclear-plugin-youtube",
       "category": "streaming",
-      "categories": ["streaming"],
+      "categories": [
+        "streaming"
+      ],
       "tags": [
         "youtube",
         "streaming",
@@ -41,7 +45,10 @@
       "author": "nukeop",
       "repo": "NuclearPlayer/nuclear-plugin-bandcamp",
       "category": "metadata",
-      "categories": ["metadata", "streaming"],
+      "categories": [
+        "metadata",
+        "streaming"
+      ],
       "tags": [
         "bandcamp",
         "metadata",
@@ -58,7 +65,10 @@
       "author": "nukeop",
       "repo": "NuclearPlayer/nuclear-plugin-soundcloud",
       "category": "streaming",
-      "categories": ["metadata", "streaming"],
+      "categories": [
+        "metadata",
+        "streaming"
+      ],
       "tags": [
         "soundcloud",
         "metadata",
@@ -75,7 +85,10 @@
       "author": "nukeop",
       "repo": "NuclearPlayer/nuclear-plugin-something",
       "category": "metadata",
-      "categories": ["metadata", "playlists"],
+      "categories": [
+        "metadata",
+        "playlists"
+      ],
       "tags": [
         "metadata"
       ],
@@ -90,7 +103,10 @@
       "author": "nukeop",
       "repo": "NuclearPlayer/nuclear-plugin-deezer-dashboard",
       "category": "dashboard",
-      "categories": ["dashboard", "playlists"],
+      "categories": [
+        "dashboard",
+        "playlists"
+      ],
       "tags": [
         "deezer",
         "dashboard",
@@ -107,7 +123,9 @@
       "author": "nukeop",
       "repo": "NuclearPlayer/nuclear-plugin-musicbrainz",
       "category": "metadata",
-      "categories": ["metadata"],
+      "categories": [
+        "metadata"
+      ],
       "tags": [
         "musicbrainz",
         "metadata",
@@ -124,7 +142,9 @@
       "author": "nukeop",
       "repo": "NuclearPlayer/nuclear-plugin-listenbrainz-dashboard",
       "category": "dashboard",
-      "categories": ["dashboard"],
+      "categories": [
+        "dashboard"
+      ],
       "tags": [
         "listenbrainz",
         "dashboard",
@@ -141,7 +161,10 @@
       "author": "nukeop",
       "repo": "NuclearPlayer/nuclear-plugin-lastfm",
       "category": "scrobbling",
-      "categories": ["discovery", "scrobbling"],
+      "categories": [
+        "discovery",
+        "scrobbling"
+      ],
       "tags": [
         "lastfm",
         "scrobbling"
@@ -157,7 +180,9 @@
       "author": "nukeop",
       "repo": "NuclearPlayer/nuclear-plugin-youtube-playlists",
       "category": "other",
-      "categories": ["playlists"],
+      "categories": [
+        "playlists"
+      ],
       "tags": [
         "youtube",
         "playlists",
@@ -174,7 +199,10 @@
       "author": "nukeop",
       "repo": "NuclearPlayer/nuclear-plugin-khinsider",
       "category": "metadata",
-      "categories": ["metadata", "streaming"],
+      "categories": [
+        "metadata",
+        "streaming"
+      ],
       "tags": [
         "khinsider",
         "vgm",
@@ -185,6 +213,27 @@
       "version": "0.1.0",
       "downloadUrl": "https://github.com/NuclearPlayer/nuclear-plugin-khinsider/releases/download/v0.1.0/plugin.zip",
       "addedAt": "2026-04-08T00:00:00Z"
+    },
+    {
+      "id": "nuclear-plugin-bandcamp-dashboard",
+      "name": "Bandcamp Dashboard",
+      "description": "Browse Bandcamp's Album of the Day, New & Notable releases, and Bandcamp Weekly radio shows",
+      "author": "chrislueders",
+      "repo": "chrislueders/nuclear-plugin-bandcamp-dashboard",
+      "category": "dashboard",
+      "categories": [
+        "dashboard"
+      ],
+      "tags": [
+        "bandcamp",
+        "dashboard",
+        "discovery",
+        "radio",
+        "album-of-the-day"
+      ],
+      "version": "0.1.0",
+      "downloadUrl": "https://github.com/chrislueders/nuclear-plugin-bandcamp-dashboard/releases/download/v0.1.0/plugin.zip",
+      "addedAt": "2026-05-13T00:00:00Z"
     }
   ],
   "version": 1
