@@ -2,6 +2,19 @@
   "$schema": "./schema/plugins.schema.json",
   "plugins": [
     {
+      "id": "nuclear-plugin-omnisource",
+      "name": "OmniSource",
+      "description": "Multi-source streaming and metadata: fans out searches to YouTube, SoundCloud, Bandcamp, and MusicBrainz in parallel with automatic scoring. Includes YouTube playlist search in the Albums tab.",
+      "author": "chrislueders",
+      "repo": "chrislueders/nuclear-plugin-omnisource",
+      "category": "streaming",
+      "categories": ["streaming", "metadata"],
+      "tags": ["youtube", "soundcloud", "bandcamp", "musicbrainz", "streaming", "metadata", "playlists", "multi-source"],
+      "version": "1.0.1",
+      "downloadUrl": "https://github.com/chrislueders/nuclear-plugin-omnisource/releases/download/v1.0.1/plugin.zip",
+      "addedAt": "2026-05-12T00:00:00Z"
+    },
+    {
       "id": "nuclear-plugin-discogs",
       "name": "Discogs",
       "description": "Fetch artist and album metadata from Discogs",
