@@ -35,7 +35,7 @@ function gh(args: string): string {
 
 function getLatestRelease(repo: string): { version: string; downloadUrl: string } {
   const json = gh(
-    `api repos/${repo}/releases/latest --jq '{tag: .tag_name, url: (.assets[] | select(.name == "${PLUGIN_ASSET_NAME}") | .browser_download_url)}'`
+    `api repos/${repo}/releases/latest --jq '{tag: .tag_name, url: (.assets[] | select(.name == "${PLUGIN_ASSET_NAME}" or .label == "${PLUGIN_ASSET_NAME}") | .browser_download_url)}'`
   );
   const release = JSON.parse(json);
 
@@ -45,28 +45,38 @@ function getLatestRelease(repo: string): { version: string; downloadUrl: string 
   };
 }
 
-function updatePlugin(plugin: Plugin): Plugin {
+function updatePlugin(plugin: Plugin): { plugin: Plugin; failed: boolean } {
   console.log(`${plugin.name} (${plugin.repo}):`);
 
-  const release = getLatestRelease(plugin.repo);
+  try {
+    const release = getLatestRelease(plugin.repo);
 
-  if (plugin.version === release.version && plugin.downloadUrl === release.downloadUrl) {
-    console.log(`Already up to date (${release.version})`);
-    return plugin;
+    if (plugin.version === release.version && plugin.downloadUrl === release.downloadUrl) {
+      console.log(`Already up to date (${release.version})`);
+      return { plugin, failed: false };
+    }
+
+    console.log(`Updated: ${plugin.version ?? "none"} -> ${release.version}`);
+    return { plugin: { ...plugin, ...release }, failed: false };
+  } catch (err) {
+    const message = err instanceof Error ? err.message : String(err);
+    console.error(`  Failed: ${message}`);
+    return { plugin, failed: true };
   }
-
-  console.log(`Updated: ${plugin.version ?? "none"} -> ${release.version}`);
-  return { ...plugin, ...release };
 }
 
 const registry: PluginRegistry = JSON.parse(
   readFileSync(PLUGINS_PATH, "utf-8")
 );
 
-const updatedPlugins = registry.plugins.map(updatePlugin);
+const results = registry.plugins.map(updatePlugin);
+const updatedPlugins = results.map((r) => r.plugin);
 const updatedCount = updatedPlugins.filter(
   (plugin, index) => plugin !== registry.plugins[index]
 ).length;
+const failedPlugins = results
+  .filter((r) => r.failed)
+  .map((r) => r.plugin);
 
 if (updatedCount > 0) {
   const updatedRegistry: PluginRegistry = { ...registry, plugins: updatedPlugins };
@@ -74,4 +84,11 @@ if (updatedCount > 0) {
   console.log(`\nUpdated ${updatedCount} plugin(s).`);
 } else {
   console.log("\nAll plugins already up to date.");
+}
+
+if (failedPlugins.length > 0) {
+  console.error(`\nFailed to update ${failedPlugins.length} plugin(s):`);
+  for (const plugin of failedPlugins) {
+    console.error(`  - ${plugin.name} (${plugin.repo})`);
+  }
 }
