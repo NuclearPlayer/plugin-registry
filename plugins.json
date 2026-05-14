@@ -8,8 +8,20 @@
       "author": "chrislueders",
       "repo": "chrislueders/nuclear-plugin-omnisource",
       "category": "streaming",
-      "categories": ["streaming", "metadata"],
-      "tags": ["youtube", "soundcloud", "bandcamp", "musicbrainz", "streaming", "metadata", "playlists", "multi-source"],
+      "categories": [
+        "streaming",
+        "metadata"
+      ],
+      "tags": [
+        "youtube",
+        "soundcloud",
+        "bandcamp",
+        "musicbrainz",
+        "streaming",
+        "metadata",
+        "playlists",
+        "multi-source"
+      ],
       "version": "1.0.1",
       "downloadUrl": "https://github.com/chrislueders/nuclear-plugin-omnisource/releases/download/v1.0.1/plugin.zip",
       "addedAt": "2026-05-12T00:00:00Z"
@@ -244,8 +256,8 @@
         "radio",
         "album-of-the-day"
       ],
-      "version": "0.1.0",
-      "downloadUrl": "https://github.com/chrislueders/nuclear-plugin-bandcamp-dashboard/releases/download/v0.1.0/plugin.zip",
+      "version": "0.1.1",
+      "downloadUrl": "https://github.com/chrislueders/nuclear-plugin-bandcamp-dashboard/releases/download/v0.1.1/plugin.zip",
       "addedAt": "2026-05-13T00:00:00Z"
     }
   ],
