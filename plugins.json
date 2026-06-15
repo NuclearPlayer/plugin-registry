@@ -2,6 +2,21 @@
   "$schema": "./schema/plugins.schema.json",
   "plugins": [
     {
+      "id": "nuclear-plugin-mediasession",
+      "name": "MediaSession",
+      "description": "Exposes Nuclear's playback to your desktop's media controls.",
+      "author": "rkben",
+      "repo": "rkben/nuclear-plugin-mediasession",
+      "category": "other",
+      "categories": [
+        "other"
+      ],
+      "tags": [],
+      "version": "0.1.0",
+      "downloadUrl": "https://github.com/rkben/nuclear-plugin-mediasession/releases/download/v0.1.0/plugin.zip",
+      "addedAt": "2026-06-15T00:00:00Z"
+    },
+    {
       "id": "nuclear-plugin-omnisource",
       "name": "OmniSource",
       "description": "Multi-source streaming and metadata: fans out searches to YouTube, SoundCloud, Bandcamp, and MusicBrainz in parallel with automatic scoring. Includes YouTube playlist search in the Albums tab.",
