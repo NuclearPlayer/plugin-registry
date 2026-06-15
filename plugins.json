@@ -6,7 +6,7 @@
       "name": "MediaSession",
       "description": "Exposes Nuclear's playback to your desktop's media controls.",
       "author": "rkben",
-      "repo": "rkben/nuclear-plugin-omnisource",
+      "repo": "rkben/nuclear-plugin-mediasession",
       "category": "other",
       "categories": [
         "other"
