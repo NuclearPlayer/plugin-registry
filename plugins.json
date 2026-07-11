@@ -2,6 +2,20 @@
   "$schema": "./schema/plugins.schema.json",
   "plugins": [
     {
+      "id": "nuclear-plugin-youtube-liked-songs-sync",
+      "name": "Youtube Liked Songs Sync",
+      "description": "Syncs YouTube Music Liked Songs to Nuclear local playlists",
+      "author": "esershnr",
+      "repo": "esershnr/nuclear-plugin-youtube-liked-songs-sync",
+      "category": "playlists",
+      "categories": [
+        "playlists"
+      ],
+      "tags": [],
+      "version": "0.1.0",
+      "downloadUrl": "https://github.com/esershnr/nuclear-plugin-youtube-liked-songs-sync/releases/download/v0.1.0/plugin.zip"
+    },
+    {
       "id": "nuclear-plugin-mediasession",
       "name": "MediaSession",
       "description": "Exposes Nuclear's playback to your desktop's media controls.",
