@@ -2,61 +2,6 @@
   "$schema": "./schema/plugins.schema.json",
   "plugins": [
     {
-      "id": "nuclear-plugin-youtube-liked-songs-sync",
-      "name": "Youtube Liked Songs Sync",
-      "description": "Syncs YouTube Music Liked Songs to Nuclear local playlists",
-      "author": "esershnr",
-      "repo": "esershnr/nuclear-plugin-youtube-liked-songs-sync",
-      "category": "playlists",
-      "categories": [
-        "playlists"
-      ],
-      "tags": [],
-      "version": "0.1.0",
-      "downloadUrl": "https://github.com/esershnr/nuclear-plugin-youtube-liked-songs-sync/releases/download/v0.1.0/plugin.zip",
-      "addedAt": "2026-07-29T00:00:00Z"
-    },
-    {
-      "id": "nuclear-plugin-mediasession",
-      "name": "MediaSession",
-      "description": "Exposes Nuclear's playback to your desktop's media controls.",
-      "author": "rkben",
-      "repo": "rkben/nuclear-plugin-mediasession",
-      "category": "other",
-      "categories": [
-        "other"
-      ],
-      "tags": [],
-      "version": "0.1.0",
-      "downloadUrl": "https://github.com/rkben/nuclear-plugin-mediasession/releases/download/v0.1.0/plugin.zip",
-      "addedAt": "2026-06-15T00:00:00Z"
-    },
-    {
-      "id": "nuclear-plugin-omnisource",
-      "name": "OmniSource",
-      "description": "Multi-source streaming and metadata: fans out searches to YouTube, SoundCloud, Bandcamp, and MusicBrainz in parallel with automatic scoring. Includes YouTube playlist search in the Albums tab.",
-      "author": "chrislueders",
-      "repo": "chrislueders/nuclear-plugin-omnisource",
-      "category": "streaming",
-      "categories": [
-        "streaming",
-        "metadata"
-      ],
-      "tags": [
-        "youtube",
-        "soundcloud",
-        "bandcamp",
-        "musicbrainz",
-        "streaming",
-        "metadata",
-        "playlists",
-        "multi-source"
-      ],
-      "version": "1.0.1",
-      "downloadUrl": "https://github.com/chrislueders/nuclear-plugin-omnisource/releases/download/v1.0.1/plugin.zip",
-      "addedAt": "2026-05-12T00:00:00Z"
-    },
-    {
       "id": "nuclear-plugin-discogs",
       "name": "Discogs",
       "description": "Fetch artist and album metadata from Discogs",
@@ -270,6 +215,31 @@
       "addedAt": "2026-04-08T00:00:00Z"
     },
     {
+      "id": "nuclear-plugin-omnisource",
+      "name": "OmniSource",
+      "description": "Multi-source streaming and metadata: fans out searches to YouTube, SoundCloud, Bandcamp, and MusicBrainz in parallel with automatic scoring. Includes YouTube playlist search in the Albums tab.",
+      "author": "chrislueders",
+      "repo": "chrislueders/nuclear-plugin-omnisource",
+      "category": "streaming",
+      "categories": [
+        "streaming",
+        "metadata"
+      ],
+      "tags": [
+        "youtube",
+        "soundcloud",
+        "bandcamp",
+        "musicbrainz",
+        "streaming",
+        "metadata",
+        "playlists",
+        "multi-source"
+      ],
+      "version": "1.0.1",
+      "downloadUrl": "https://github.com/chrislueders/nuclear-plugin-omnisource/releases/download/v1.0.1/plugin.zip",
+      "addedAt": "2026-05-12T00:00:00Z"
+    },
+    {
       "id": "nuclear-plugin-bandcamp-dashboard",
       "name": "Bandcamp Dashboard",
       "description": "Browse Bandcamp's Album of the Day, New & Notable releases, and Bandcamp Weekly radio shows",
@@ -289,6 +259,36 @@
       "version": "0.1.1",
       "downloadUrl": "https://github.com/chrislueders/nuclear-plugin-bandcamp-dashboard/releases/download/v0.1.1/plugin-bandcamp-dashboard-0.1.1.zip",
       "addedAt": "2026-05-13T00:00:00Z"
+    },
+    {
+      "id": "nuclear-plugin-mediasession",
+      "name": "MediaSession",
+      "description": "Exposes Nuclear's playback to your desktop's media controls.",
+      "author": "rkben",
+      "repo": "rkben/nuclear-plugin-mediasession",
+      "category": "other",
+      "categories": [
+        "other"
+      ],
+      "tags": [],
+      "version": "0.1.0",
+      "downloadUrl": "https://github.com/rkben/nuclear-plugin-mediasession/releases/download/v0.1.0/plugin.zip",
+      "addedAt": "2026-06-15T00:00:00Z"
+    },
+    {
+      "id": "nuclear-plugin-youtube-liked-songs-sync",
+      "name": "Youtube Liked Songs Sync",
+      "description": "Syncs YouTube Music Liked Songs to Nuclear local playlists",
+      "author": "esershnr",
+      "repo": "esershnr/nuclear-plugin-youtube-liked-songs-sync",
+      "category": "playlists",
+      "categories": [
+        "playlists"
+      ],
+      "tags": [],
+      "version": "0.1.0",
+      "downloadUrl": "https://github.com/esershnr/nuclear-plugin-youtube-liked-songs-sync/releases/download/v0.1.0/plugin.zip",
+      "addedAt": "2026-07-29T00:00:00Z"
     },
     {
       "id": "nuclear-plugin-soundcloud-dashboard",
