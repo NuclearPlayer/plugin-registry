@@ -289,6 +289,28 @@
       "version": "0.1.1",
       "downloadUrl": "https://github.com/chrislueders/nuclear-plugin-bandcamp-dashboard/releases/download/v0.1.1/plugin-bandcamp-dashboard-0.1.1.zip",
       "addedAt": "2026-05-13T00:00:00Z"
+    },
+    {
+      "id": "nuclear-plugin-soundcloud-dashboard",
+      "name": "SoundCloud Dashboard",
+      "description": "Charts and editorial picks from SoundCloud, or your own likes, follows, listening history and personalised recommendations",
+      "author": "dasim427",
+      "repo": "dasim427/nuclear-plugin-soundcloud-dashboard",
+      "category": "dashboard",
+      "categories": [
+        "dashboard",
+        "playlists"
+      ],
+      "tags": [
+        "soundcloud",
+        "dashboard",
+        "charts",
+        "recommendations",
+        "playlists"
+      ],
+      "version": "0.6.0",
+      "downloadUrl": "https://github.com/dasim427/nuclear-plugin-soundcloud-dashboard/releases/download/v0.6.0/plugin.zip",
+      "addedAt": "2026-08-02T00:00:00Z"
     }
   ],
   "version": 1
