@@ -1,45 +1,28 @@
-# Nuclear Plugin Registry
+# Nuclear Mini Player
 
-The official index of plugins for [Nuclear](https://github.com/nukeop/nuclear).
+Nuclear Mini Player features, native settings, synced and lyrics and click-to-seek, draggable resizable panel, full-screen view, text resizing, copying lyrics, and manual refreshing, lyric glow, queue menu
 
-## What is this?
+## Installation Standalone Plugin 
 
-This registry lists all the available plugins for Nuclear. Plugins themselves live in their developers' own Github repositories.
+Open Nuclear.
 
-When you browse plugins in Nuclear, the player fetches this registry and displays available plugins. Installing a plugin downloads it directly from the plugin's Github releases.
+Go to Preferences > Plugins.
 
-## For Users
+Click Add Plugin.
 
-You don't need to interact with this repository. Browse and install plugins directly from within Nuclear.
+Navigate to or enter the following plugin directory:
+C:\Users\yourname\AppData\Roaming\com.nuclearplayer\plugins
 
-## For Plugin Developers
+## Settings
 
-Want to add your plugin to the registry?
+Settings for Nuclear Mini Player is in Preferences 
 
-1. **Build your plugin**. See the [Nuclear plugin development docs](https://nukeop.gitbook.io/nuclear/)
-2. **Prepare your repository**. Ensure your `package.json` meets [the requirements](docs/requirements.md)
-3. **Create a release**. Publish a Github release with a `plugin.zip` asset
-4. **Submit a PR**. Add your plugin to `plugins.json` following [the submission guide](docs/submitting.md)
+----------------------------------------------------------------------------
 
-## Registry Format
+Version 1.7
+Latest Update - 21/8/2026
 
-Each plugin entry in `plugins.json` looks like this:
-
-```json
-{
-  "id": "example-plugin",
-  "description": "Short description of what this plugin does",
-  "author": "github-username",
-  "repo": "owner/repo-name",
-  "category": "metadata",
-  "tags": ["optional", "tags"],
-  "addedAt": "2026-01-25"
-}
-```
-
-**Categories:** `streaming`, `metadata`, `lyrics`, `scrobbling`, `ui`, `other`
-
-More categories may be added in the future.
+For any issues, please message me on discord - visa1697
 
 ## License
 
