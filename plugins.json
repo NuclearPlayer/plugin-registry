@@ -332,6 +332,28 @@
       "version": "0.1.1",
       "downloadUrl": "https://github.com/NuclearPlayer/nuclear-plugin-netease/releases/download/v0.1.1/plugin.zip",
       "addedAt": "2026-08-15T00:00:00Z"
+    },
+    {
+      "id": "music-provider",
+      "name": "MusicProvider",
+      "description": "High-performance YouTube music search and streaming provider utilizing yt-dlp",
+      "author": "iJonyDev",
+      "repo": "JonyDevProjects/MusicProvider",
+      "category": "streaming",
+      "categories": [
+        "streaming",
+        "metadata"
+      ],
+      "tags": [
+        "youtube",
+        "streaming",
+        "metadata",
+        "yt-dlp",
+        "audio"
+      ],
+      "version": "1.0.0",
+      "downloadUrl": "https://github.com/JonyDevProjects/MusicProvider/releases/download/v1.0.0/plugin.zip",
+      "addedAt": "2026-08-21T00:00:00Z"
     }
   ],
   "version": 1
