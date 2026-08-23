@@ -338,7 +338,7 @@
       "name": "YouTube Provider",
       "description": "High-performance YouTube music search and streaming provider utilizing yt-dlp",
       "author": "iJonyDev",
-      "repo": "JonyDevProjects/MusicProvider",
+      "repo": "JonyDevProjects/yt-provider",
       "category": "streaming",
       "categories": [
         "streaming",
@@ -352,7 +352,7 @@
         "audio"
       ],
       "version": "1.0.0",
-      "downloadUrl": "https://github.com/JonyDevProjects/MusicProvider/releases/download/v1.0.0/plugin.zip",
+      "downloadUrl": "https://github.com/JonyDevProjects/yt-provider/releases/download/v1.0.0/plugin.zip",
       "addedAt": "2026-08-21T00:00:00Z"
     }
   ],
