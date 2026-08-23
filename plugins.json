@@ -334,8 +334,8 @@
       "addedAt": "2026-08-15T00:00:00Z"
     },
     {
-      "id": "music-provider",
-      "name": "MusicProvider",
+      "id": "yt-provider",
+      "name": "YouTube Provider",
       "description": "High-performance YouTube music search and streaming provider utilizing yt-dlp",
       "author": "iJonyDev",
       "repo": "JonyDevProjects/MusicProvider",
