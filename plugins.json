@@ -334,9 +334,9 @@
       "addedAt": "2026-08-15T00:00:00Z"
     },
     {
-      "id": "yt-provider",
-      "name": "YouTube Provider",
-      "description": "High-performance YouTube music search and streaming provider utilizing yt-dlp",
+      "id": "nucleartube",
+      "name": "NuclearTube",
+      "description": "High-performance YouTube music search, playlist extraction, and streaming provider for Nuclear utilizing yt-dlp",
       "author": "iJonyDev",
       "repo": "JonyDevProjects/yt-provider",
       "category": "streaming",
