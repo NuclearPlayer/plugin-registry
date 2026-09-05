@@ -354,6 +354,26 @@
       "version": "1.0.0",
       "downloadUrl": "https://github.com/JonyDevProjects/yt-provider/releases/download/v1.0.0/plugin.zip",
       "addedAt": "2026-08-21T00:00:00Z"
+    },
+    {
+      "id": "nuclear-mini-player",
+      "name": "Nuclear Mini Player",
+      "description": "A feature-rich mini player with synced lyrics, artwork controls, queue access, and MediaSession support.",
+      "author": "visa",
+      "repo": "visadaking/nuclear-mini-player",
+      "categories": [
+        "lyrics",
+        "other"
+      ],
+      "tags": [
+        "miniplayer",
+        "lyrics",
+        "media",
+        "queue"
+      ],
+      "version": "1.7.8",
+      "downloadUrl": "https://github.com/visadaking/nuclear-mini-player/releases/download/v1.7.8/plugin.zip",
+      "addedAt": "2026-09-05T00:28:04.288156Z"
     }
   ],
   "version": 1
