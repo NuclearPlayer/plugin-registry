@@ -375,7 +375,20 @@
       "version": "1.7.10",
       "downloadUrl": "https://github.com/visadaking/nuclear-mini-player/releases/download/v1.7.10/plugin.zip",
       "addedAt": "2026-09-06T00:00:00Z"
-    }
+    },
+    {
+  "id": "nuclear-txt-queue",
+  "name": "TXT Queue",
+  "description": "Import songs from a TXT file into the Nuclear Player queue",
+  "author": "EvgenchikS",
+  "repo": "EvgenchikS2/Nuclear_Player_txt_queue",
+  "category": "other",
+  "categories": ["other"],
+  "tags": ["txt", "queue", "playlist", "import"],
+  "version": "1.0.2",
+  "downloadUrl": "https://github.com/EvgenchikS2/Nuclear_Player_txt_queue/releases/download/v1.0.2/plugin.zip",
+  "addedAt": "2026-10-03T00:00:00Z"
+}
   ],
   "version": 1
 }
