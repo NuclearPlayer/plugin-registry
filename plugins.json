@@ -375,6 +375,26 @@
       "version": "1.7.10",
       "downloadUrl": "https://github.com/visadaking/nuclear-mini-player/releases/download/v1.7.10/plugin.zip",
       "addedAt": "2026-09-06T00:00:00Z"
+    },
+    {
+      "id": "nuclear-dashboard-video",
+      "name": "Dashboard Video Companion",
+      "description": "Auto-resizing zero-control YouTube video companion on the dashboard with GPU decode and instant transitions.",
+      "author": "HuggingBunny",
+      "repo": "HuggingBunny/nuclear-dashboard-video",
+      "category": "dashboard",
+      "categories": [
+        "dashboard"
+      ],
+      "tags": [
+        "youtube",
+        "video",
+        "dashboard",
+        "companion"
+      ],
+      "version": "1.0.0",
+      "downloadUrl": "https://github.com/HuggingBunny/nuclear-dashboard-video/releases/download/v1.0.0/plugin.zip",
+      "addedAt": "2026-09-30T20:47:00Z"
     }
   ],
   "version": 1
