@@ -433,7 +433,9 @@
         "new-releases",
         "dashboard"
       ],
-      "addedAt": "2026-09-22T00:00:00Z"
+      "addedAt": "2026-09-22T00:00:00Z",
+      "version": "1.0.0",
+      "downloadUrl": "https://github.com/Takayom1/nuclear-plugin-spotify-sync/releases/download/v1.0.0/plugin.zip"
     },
     {
       "id": "nuclear-txt-queue",
