@@ -456,6 +456,25 @@
       "version": "1.0.2",
       "downloadUrl": "https://github.com/EvgenchikS2/Nuclear_Player_txt_queue/releases/download/v1.0.2/plugin.zip",
       "addedAt": "2026-10-03T00:00:00Z"
+    },
+    {
+      "id": "nuclear-plugin-spotify-playlist-import",
+      "name": "Spotify Playlist Import",
+      "description": "Import Spotify playlists by URL into Nuclear (PlaylistProvider, anonymous public Spotify API, no account needed)",
+      "author": "Bl4ckFl4mes",
+      "repo": "Bl4ckFl4mes/nuclear-plugin-spotify-playlist-import",
+      "category": "playlists",
+      "categories": [
+        "playlists"
+      ],
+      "tags": [
+        "spotify",
+        "playlists",
+        "import"
+      ],
+      "version": "0.1.0",
+      "downloadUrl": "https://github.com/Bl4ckFl4mes/nuclear-plugin-spotify-playlist-import/releases/download/v0.1.0/plugin.zip",
+      "addedAt": "2026-10-20T23:30:00Z"
     }
   ],
   "version": 1
