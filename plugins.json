@@ -17,7 +17,8 @@
       ],
       "version": "0.2.0",
       "downloadUrl": "https://github.com/NuclearPlayer/nuclear-plugin-discogs/releases/download/v0.2.0/plugin.zip",
-      "addedAt": "2026-01-27T00:00:00Z"
+      "addedAt": "2026-01-27T00:00:00Z",
+      "sha256": "86320681ff21b4eb45d44aa55bac272eef00bf29e0286f3a956fa5c8819abaec"
     },
     {
       "id": "nuclear-plugin-youtube",
@@ -57,7 +58,8 @@
       ],
       "version": "1.1.2",
       "downloadUrl": "https://github.com/NuclearPlayer/nuclear-plugin-bandcamp/releases/download/v1.1.2/plugin.zip",
-      "addedAt": "2026-02-12T00:00:00Z"
+      "addedAt": "2026-02-12T00:00:00Z",
+      "sha256": "55506aa16c7c8c71b8f994d08bd9b3adc3307eb552566f7b2f18f338ab3f43c4"
     },
     {
       "id": "nuclear-plugin-soundcloud",
@@ -96,7 +98,8 @@
       ],
       "version": "0.3.0",
       "downloadUrl": "https://github.com/NuclearPlayer/nuclear-plugin-something/releases/download/v0.3.0/plugin.zip",
-      "addedAt": "2026-02-15T00:00:00Z"
+      "addedAt": "2026-02-15T00:00:00Z",
+      "sha256": "a61cbfa54223f6ee3b01f562ac21a060cb4bc3d08a89bb87cb753a571178f4b3"
     },
     {
       "id": "nuclear-plugin-deezer-dashboard",
@@ -344,7 +347,8 @@
       ],
       "version": "0.1.1",
       "downloadUrl": "https://github.com/NuclearPlayer/nuclear-plugin-netease/releases/download/v0.1.1/plugin.zip",
-      "addedAt": "2026-08-15T00:00:00Z"
+      "addedAt": "2026-08-15T00:00:00Z",
+      "sha256": "b67a81659a1c7d32bb967369d4d09e1f2f909afbd86732c7e18ad144a3331cd8"
     },
     {
       "id": "nucleartube",
