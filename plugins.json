@@ -94,7 +94,8 @@
       ],
       "version": "0.3.0",
       "downloadUrl": "https://github.com/NuclearPlayer/nuclear-plugin-something/releases/download/v0.3.0/plugin.zip",
-      "addedAt": "2026-02-15T00:00:00Z"
+      "addedAt": "2026-02-15T00:00:00Z",
+      "sha256": "a61cbfa54223f6ee3b01f562ac21a060cb4bc3d08a89bb87cb753a571178f4b3"
     },
     {
       "id": "nuclear-plugin-deezer-dashboard",
