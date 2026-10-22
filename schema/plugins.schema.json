@@ -115,6 +115,11 @@
           "description": "Direct download URL for the latest plugin.zip",
           "format": "uri"
         },
+        "sha256": {
+          "type": "string",
+          "description": "SHA-256 hash of the plugin.zip at downloadUrl",
+          "pattern": "^[a-f0-9]{64}$"
+        },
         "tags": {
           "type": "array",
           "description": "Optional searchable tags",

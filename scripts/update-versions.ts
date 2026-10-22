@@ -1,86 +1,59 @@
-import { readFileSync, writeFileSync } from "node:fs";
-import { execSync } from "node:child_process";
-import { fileURLToPath } from "node:url";
-import { dirname, resolve } from "node:path";
+import { createHash } from "node:crypto";
+import { getLatestRelease, hasHoldPullRequest, openHoldPullRequest } from "./lib/github.js";
+import { readRegistry, writeRegistry } from "./lib/registry.js";
+import { scanRelease } from "./lib/scan.js";
+import type { Plugin, PluginRegistry } from "./lib/types.js";
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const PROJECT_ROOT = resolve(__dirname, "..");
-const PLUGINS_PATH = resolve(PROJECT_ROOT, "plugins.json");
+type UpdateResult = { plugin: Plugin; failed: boolean };
 
-interface Plugin {
-  id: string;
-  name: string;
-  description: string;
-  author: string;
-  repo: string;
-  category: string;
-  categories?: string[];
-  tags?: string[];
-  version?: string;
-  downloadUrl?: string;
-  addedAt: string;
-}
-
-interface PluginRegistry {
-  $schema?: string;
-  version: number;
-  plugins: Plugin[];
-}
-
-const PLUGIN_ASSET_NAME = "plugin.zip";
-
-function gh(args: string): string {
-  return execSync(`gh ${args}`, { encoding: "utf-8" }).trim();
-}
-
-function getLatestRelease(repo: string): { version: string; downloadUrl: string } {
-  const json = gh(
-    `api repos/${repo}/releases/latest --jq '{tag: .tag_name, url: (.assets[] | select(.name == "${PLUGIN_ASSET_NAME}" or .label == "${PLUGIN_ASSET_NAME}") | .browser_download_url)}'`
-  );
-  const release = JSON.parse(json);
-
-  return {
-    version: release.tag.replace(/^v/i, ""),
-    downloadUrl: release.url,
-  };
-}
-
-function updatePlugin(plugin: Plugin): { plugin: Plugin; failed: boolean } {
-  console.log(`${plugin.name} (${plugin.repo}):`);
-
+async function updatePlugin(registry: PluginRegistry, plugin: Plugin): Promise<UpdateResult> {
   try {
     const release = getLatestRelease(plugin.repo);
 
     if (plugin.version === release.version && plugin.downloadUrl === release.downloadUrl) {
-      console.log(`Already up to date (${release.version})`);
+      console.log(`${plugin.id}: Already up to date (${release.version})`);
       return { plugin, failed: false };
     }
 
-    console.log(`Updated: ${plugin.version ?? "none"} -> ${release.version}`);
-    return { plugin: { ...plugin, ...release }, failed: false };
+    if (hasHoldPullRequest(plugin.id, release.version)) {
+      console.log(`${plugin.id}: Held ${release.version}`);
+      return { plugin, failed: false };
+    }
+
+    const response = await fetch(release.downloadUrl);
+    const zip = new Uint8Array(await response.arrayBuffer());
+    const updated = { ...plugin, ...release, sha256: createHash("sha256").update(zip).digest("hex") };
+    const hold = scanRelease(release.version, zip);
+
+    if (hold) {
+      openHoldPullRequest(registry, updated, hold);
+      return { plugin, failed: false };
+    }
+
+    console.log(`${plugin.id}: Updated: ${plugin.version ?? "none"} -> ${release.version}`);
+    return { plugin: updated, failed: false };
   } catch (err) {
-    const message = err instanceof Error ? err.message : String(err);
-    console.error(`  Failed: ${message}`);
+    console.error(`${plugin.id}: Failed: ${(err as Error).message}`);
     return { plugin, failed: true };
   }
 }
 
-const registry: PluginRegistry = JSON.parse(
-  readFileSync(PLUGINS_PATH, "utf-8")
+const registry = readRegistry();
+
+const results = await Promise.all(
+  registry.plugins.map((plugin) => updatePlugin(registry, plugin))
 );
 
-const results = registry.plugins.map(updatePlugin);
-const updatedPlugins = results.map((r) => r.plugin);
+const updatedPlugins = results.map((result) => result.plugin);
 const updatedCount = updatedPlugins.filter(
   (plugin, index) => plugin !== registry.plugins[index]
 ).length;
 const failedPlugins = results
-  .filter((r) => r.failed)
-  .map((r) => r.plugin);
+  .filter((result) => result.failed)
+  .map((result) => result.plugin);
 
 if (updatedCount > 0) {
-  const updatedRegistry: PluginRegistry = { ...registry, plugins: updatedPlugins };
-  writeFileSync(PLUGINS_PATH, JSON.stringify(updatedRegistry, null, 2) + "\n");
+  writeRegistry({ ...registry, plugins: updatedPlugins });
   console.log(`\nUpdated ${updatedCount} plugin(s).`);
 } else {
   console.log("\nAll plugins already up to date.");
@@ -88,7 +61,5 @@ if (updatedCount > 0) {
 
 if (failedPlugins.length > 0) {
   console.error(`\nFailed to update ${failedPlugins.length} plugin(s):`);
-  for (const plugin of failedPlugins) {
-    console.error(`  - ${plugin.name} (${plugin.repo})`);
-  }
+  failedPlugins.forEach((plugin) => console.error(`  - ${plugin.name} (${plugin.repo})`));
 }
