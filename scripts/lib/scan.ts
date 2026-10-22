@@ -7,7 +7,7 @@ import type { Hold } from "./types.js";
 
 type Verdict = {
   verdict: "clean" | "suspicious";
-  findings: string[];
+  findings: { category: string; description: string }[];
 };
 
 function buildPrompt(version: string, files: Unzipped): string {
@@ -29,7 +29,10 @@ function parseVerdict(reply: string): Hold | undefined {
     return undefined;
   }
 
-  return { reason: "Copilot found suspicious code", findings };
+  return {
+    reason: "Copilot found suspicious code",
+    findings: findings.map(({ category, description }) => `${category}: ${description}`),
+  };
 }
 
 function runCopilot(prompt: string): Hold | undefined {

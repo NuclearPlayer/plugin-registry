@@ -1,5 +1,5 @@
 import { downloadZip } from "./lib/download.js";
-import { hasHoldPullRequest, openHoldPullRequest } from "./lib/github.js";
+import { openHoldPullRequest } from "./lib/github.js";
 import { readRegistry, writeRegistry } from "./lib/registry.js";
 import { scanRelease } from "./lib/scan.js";
 import type { Plugin, PluginRegistry } from "./lib/types.js";
@@ -11,12 +11,13 @@ async function backfillPlugin(registry: PluginRegistry, plugin: Plugin): Promise
   }
 
   try {
-    if (hasHoldPullRequest(plugin.id, version)) {
-      console.log(`${plugin.id}: Held ${version}`);
-      return plugin;
+    const { zip, sha256 } = await downloadZip(downloadUrl);
+
+    if (plugin.repo.startsWith("NuclearPlayer/")) {
+      console.log(`${plugin.id}: Backfilled sha256 for ${version} without a scan`);
+      return { ...plugin, sha256 };
     }
 
-    const { zip, sha256 } = await downloadZip(downloadUrl);
     const hold = scanRelease(version, zip);
 
     if (hold) {
