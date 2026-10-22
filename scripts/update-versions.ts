@@ -1,4 +1,4 @@
-import { createHash } from "node:crypto";
+import { downloadZip } from "./lib/download.js";
 import { getLatestRelease, hasHoldPullRequest, openHoldPullRequest } from "./lib/github.js";
 import { readRegistry, writeRegistry } from "./lib/registry.js";
 import { scanRelease } from "./lib/scan.js";
@@ -20,9 +20,8 @@ async function updatePlugin(registry: PluginRegistry, plugin: Plugin): Promise<U
       return { plugin, failed: false };
     }
 
-    const response = await fetch(release.downloadUrl);
-    const zip = new Uint8Array(await response.arrayBuffer());
-    const updated = { ...plugin, ...release, sha256: createHash("sha256").update(zip).digest("hex") };
+    const { zip, sha256 } = await downloadZip(release.downloadUrl);
+    const updated = { ...plugin, ...release, sha256 };
     const hold = scanRelease(release.version, zip);
 
     if (hold) {
