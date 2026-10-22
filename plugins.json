@@ -331,7 +331,8 @@
       ],
       "version": "0.1.1",
       "downloadUrl": "https://github.com/NuclearPlayer/nuclear-plugin-netease/releases/download/v0.1.1/plugin.zip",
-      "addedAt": "2026-08-15T00:00:00Z"
+      "addedAt": "2026-08-15T00:00:00Z",
+      "sha256": "b67a81659a1c7d32bb967369d4d09e1f2f909afbd86732c7e18ad144a3331cd8"
     },
     {
       "id": "nucleartube",
