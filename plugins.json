@@ -36,7 +36,8 @@
       ],
       "version": "0.1.3",
       "downloadUrl": "https://github.com/NuclearPlayer/nuclear-plugin-youtube/releases/download/v0.1.3/plugin.zip",
-      "addedAt": "2026-01-28T00:00:00Z"
+      "addedAt": "2026-01-28T00:00:00Z",
+      "sha256": "fae0d5697f6ac2ac3bf446a436336fe7dbf41f25d891279f2ae62c58a4f2ef9e"
     },
     {
       "id": "nuclear-plugin-bandcamp",
@@ -76,7 +77,8 @@
       ],
       "version": "0.3.0",
       "downloadUrl": "https://github.com/NuclearPlayer/nuclear-plugin-soundcloud/releases/download/v0.3.0/plugin.zip",
-      "addedAt": "2026-02-15T00:00:00Z"
+      "addedAt": "2026-02-15T00:00:00Z",
+      "sha256": "3ec7dbe8c119cd65ab1ecb317a226433ebec68771e909ec03f9663d854477da9"
     },
     {
       "id": "nuclear-plugin-something",
@@ -114,7 +116,8 @@
       ],
       "version": "0.2.0",
       "downloadUrl": "https://github.com/NuclearPlayer/nuclear-plugin-deezer-dashboard/releases/download/v0.2.0/plugin.zip",
-      "addedAt": "2026-02-19T00:00:00Z"
+      "addedAt": "2026-02-19T00:00:00Z",
+      "sha256": "566cd5d2b74449c158f2ae37c69dce6bbb07494abe14c39f725d8b6b0fc940c9"
     },
     {
       "id": "nuclear-plugin-musicbrainz",
@@ -133,7 +136,8 @@
       ],
       "version": "0.1.0",
       "downloadUrl": "https://github.com/NuclearPlayer/nuclear-plugin-musicbrainz/releases/download/v0.1.0/plugin.zip",
-      "addedAt": "2026-02-22T00:00:00Z"
+      "addedAt": "2026-02-22T00:00:00Z",
+      "sha256": "8e63733281c7898fe3d648b983215f3a2f487c173fd44ddd3dfe384819ca7209"
     },
     {
       "id": "nuclear-plugin-listenbrainz-dashboard",
@@ -152,7 +156,8 @@
       ],
       "version": "0.1.0",
       "downloadUrl": "https://github.com/NuclearPlayer/nuclear-plugin-listenbrainz-dashboard/releases/download/v0.1.0/plugin.zip",
-      "addedAt": "2026-02-22T00:00:00Z"
+      "addedAt": "2026-02-22T00:00:00Z",
+      "sha256": "7d02e23e0e402c499e4334431cba2e80779fd6c7f2420de29d13c618916d3a00"
     },
     {
       "id": "nuclear-plugin-lastfm",
@@ -171,7 +176,8 @@
       ],
       "version": "0.2.2",
       "downloadUrl": "https://github.com/NuclearPlayer/nuclear-plugin-lastfm/releases/download/v0.2.2/plugin.zip",
-      "addedAt": "2026-03-04T00:00:00Z"
+      "addedAt": "2026-03-04T00:00:00Z",
+      "sha256": "961155e230d7ffbc80ac6d4fc054db23c329d2d10338bd254eb7044450b7898e"
     },
     {
       "id": "nuclear-plugin-youtube-playlists",
@@ -190,7 +196,8 @@
       ],
       "version": "0.1.0",
       "downloadUrl": "https://github.com/NuclearPlayer/nuclear-plugin-youtube-playlists/releases/download/v0.1.0/plugin.zip",
-      "addedAt": "2026-03-07T00:00:00Z"
+      "addedAt": "2026-03-07T00:00:00Z",
+      "sha256": "8f32abe85bf27c7f4d82cbb8fbe7dffb0937775664e36ef8631ab6ccc96eb74e"
     },
     {
       "id": "nuclear-plugin-khinsider",
@@ -212,7 +219,8 @@
       ],
       "version": "0.1.1",
       "downloadUrl": "https://github.com/NuclearPlayer/nuclear-plugin-khinsider/releases/download/v0.1.1/plugin.zip",
-      "addedAt": "2026-04-08T00:00:00Z"
+      "addedAt": "2026-04-08T00:00:00Z",
+      "sha256": "8e9c3e225a30b1d7620f26c6a7db582f537ca4f29fe9b7263d36eadc5adfc35f"
     },
     {
       "id": "nuclear-plugin-omnisource",
@@ -237,7 +245,8 @@
       ],
       "version": "1.0.1",
       "downloadUrl": "https://github.com/chrislueders/nuclear-plugin-omnisource/releases/download/v1.0.1/plugin.zip",
-      "addedAt": "2026-05-12T00:00:00Z"
+      "addedAt": "2026-05-12T00:00:00Z",
+      "sha256": "1ef791a15d22654d49d4ed1609afd93c4f3279efb156f6635ff9a2e5b76cc2a3"
     },
     {
       "id": "nuclear-plugin-bandcamp-dashboard",
@@ -258,7 +267,8 @@
       ],
       "version": "0.1.1",
       "downloadUrl": "https://github.com/chrislueders/nuclear-plugin-bandcamp-dashboard/releases/download/v0.1.1/plugin-bandcamp-dashboard-0.1.1.zip",
-      "addedAt": "2026-05-13T00:00:00Z"
+      "addedAt": "2026-05-13T00:00:00Z",
+      "sha256": "61d71e207ca1fd934009362c4db5bcf0bbcba356ee8c02f9838642ddb388a989"
     },
     {
       "id": "nuclear-plugin-mediasession",
@@ -273,7 +283,8 @@
       "tags": [],
       "version": "0.1.0",
       "downloadUrl": "https://github.com/rkben/nuclear-plugin-mediasession/releases/download/v0.1.0/plugin.zip",
-      "addedAt": "2026-06-15T00:00:00Z"
+      "addedAt": "2026-06-15T00:00:00Z",
+      "sha256": "fdc99225a17b8b74cae173d9c083fb927c709132784a0a721f8f8f2660d1fac4"
     },
     {
       "id": "nuclear-plugin-youtube-liked-songs-sync",
@@ -288,7 +299,8 @@
       "tags": [],
       "version": "0.1.0",
       "downloadUrl": "https://github.com/esershnr/nuclear-plugin-youtube-liked-songs-sync/releases/download/v0.1.0/plugin.zip",
-      "addedAt": "2026-07-29T00:00:00Z"
+      "addedAt": "2026-07-29T00:00:00Z",
+      "sha256": "df3e352cdfa449a9122b6b8ec81fde4a3381e1e49f2074d447f018b745d63e9c"
     },
     {
       "id": "nuclear-plugin-soundcloud-dashboard",
@@ -310,7 +322,8 @@
       ],
       "version": "0.6.0",
       "downloadUrl": "https://github.com/dasim427/nuclear-plugin-soundcloud-dashboard/releases/download/v0.6.0/plugin.zip",
-      "addedAt": "2026-08-02T00:00:00Z"
+      "addedAt": "2026-08-02T00:00:00Z",
+      "sha256": "ac49ed5bad7936702820036f3de03ac21621efce1388efd429f9f11ebcbf4a1d"
     },
     {
       "id": "nuclear-plugin-netease",
@@ -353,7 +366,8 @@
       ],
       "version": "1.1.0",
       "downloadUrl": "https://github.com/JonyDevProjects/yt-provider/releases/download/v1.1.0/plugin.zip",
-      "addedAt": "2026-08-21T00:00:00Z"
+      "addedAt": "2026-08-21T00:00:00Z",
+      "sha256": "ba8a34051abb9a0588ab0c19bda4c1d28e519fc6f19bcd77b016b5779ddce126"
     },
     {
       "id": "nuclear-mini-player",
@@ -374,7 +388,8 @@
       ],
       "version": "1.8.7",
       "downloadUrl": "https://github.com/visadaking/nuclear-mini-player/releases/download/v1.8.7/plugin.zip",
-      "addedAt": "2026-09-06T00:00:00Z"
+      "addedAt": "2026-09-06T00:00:00Z",
+      "sha256": "e5f674f9c0a62fef00963dfe3634cf05317bca6cec98c9515d67a32ad2c954e9"
     },
     {
       "id": "nuclear-plugin-lrclib",
@@ -392,7 +407,8 @@
       ],
       "version": "0.1.0",
       "downloadUrl": "https://github.com/NuclearPlayer/nuclear-plugin-lrclib/releases/download/v0.1.0/plugin.zip",
-      "addedAt": "2026-10-05T00:00:00Z"
+      "addedAt": "2026-10-05T00:00:00Z",
+      "sha256": "e2ef891de02d2b9e330bd83deeab61537ad590d94381c27b2c0678e1b2884a98"
     },
     {
       "id": "nuclear-plugin-kugou",
@@ -412,7 +428,8 @@
       ],
       "version": "0.1.0",
       "downloadUrl": "https://github.com/NuclearPlayer/nuclear-plugin-kugou/releases/download/v0.1.0/plugin.zip",
-      "addedAt": "2026-10-05T00:00:00Z"
+      "addedAt": "2026-10-05T00:00:00Z",
+      "sha256": "8525156cb91ccb3fc4ce766c6c2f6763cd89e719c67d714be4ed9ca088e73bb6"
     },
     {
       "id": "nuclear-plugin-spotify-home",
@@ -455,7 +472,8 @@
       ],
       "version": "1.0.2",
       "downloadUrl": "https://github.com/EvgenchikS2/Nuclear_Player_txt_queue/releases/download/v1.0.2/plugin.zip",
-      "addedAt": "2026-10-03T00:00:00Z"
+      "addedAt": "2026-10-03T00:00:00Z",
+      "sha256": "895e06f9195df7e1ab6602f397117f07e6d66c1a8cc34189713c638fd4cfb8f4"
     }
   ],
   "version": 1
