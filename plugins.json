@@ -17,7 +17,8 @@
       ],
       "version": "0.2.0",
       "downloadUrl": "https://github.com/NuclearPlayer/nuclear-plugin-discogs/releases/download/v0.2.0/plugin.zip",
-      "addedAt": "2026-01-27T00:00:00Z"
+      "addedAt": "2026-01-27T00:00:00Z",
+      "sha256": "86320681ff21b4eb45d44aa55bac272eef00bf29e0286f3a956fa5c8819abaec"
     },
     {
       "id": "nuclear-plugin-youtube",
