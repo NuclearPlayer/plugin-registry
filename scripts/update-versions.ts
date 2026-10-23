@@ -59,4 +59,5 @@ if (updatedCount > 0) {
 if (failedPlugins.length > 0) {
   console.error(`\nFailed to update ${failedPlugins.length} plugin(s):`);
   failedPlugins.forEach((plugin) => console.error(`  - ${plugin.name} (${plugin.repo})`));
+  process.exit(1);
 }

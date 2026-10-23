@@ -64,6 +64,7 @@ Important:
 - `id` must match the `name` field in your plugin's `package.json`
 - `category` must match the `nuclear.category` in your `package.json`
 - `addedAt` should be today's date in `YYYY-MM-DD` format
+- Do not add `version`, `downloadUrl`, or `sha256`. The registry adds them automatically after we merge your plugin.
 
 ## Step 4: Submit a Pull Request
 

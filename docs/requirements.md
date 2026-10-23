@@ -6,14 +6,14 @@ Your plugin must meet these requirements to be accepted into the registry.
 
 Your plugin's `package.json` must include these fields:
 
-| Field | Required | Description |
-|-------|----------|-------------|
-| `name` | Yes | Plugin identifier (lowercase, hyphens allowed) |
-| `version` | Yes | Semver version (e.g., `1.0.0`) |
-| `description` | Yes | Short description |
-| `author` | Yes | Your name or GitHub username |
-| `main` | Yes | Entry point (e.g., `dist/index.js`) |
-| `nuclear` | Yes | Nuclear-specific configuration (see below) |
+| Field         | Required | Description                                    |
+| ------------- | -------- | ---------------------------------------------- |
+| `name`        | Yes      | Plugin identifier (lowercase, hyphens allowed) |
+| `version`     | Yes      | Semver version (e.g., `1.0.0`)                 |
+| `description` | Yes      | Short description                              |
+| `author`      | Yes      | Your name or GitHub username                   |
+| `main`        | Yes      | Entry point (e.g., `dist/index.js`)            |
+| `nuclear`     | Yes      | Nuclear-specific configuration (see below)     |
 
 ### The `nuclear` Field
 
@@ -31,12 +31,12 @@ Your plugin's `package.json` must include these fields:
 }
 ```
 
-| Property | Required | Description |
-|----------|----------|-------------|
-| `displayName` | No | Human-readable name shown to users. Falls back to `name` if not set |
-| `category` | Yes | One of: `streaming`, `metadata`, `lyrics`, `scrobbling`, `ui`, `other` |
-| `icon` | No | Plugin icon. Currently only `{"type": "link", "link": "url"}` is supported |
-| `permissions` | No | Informational list of permissions the plugin uses |
+| Property      | Required | Description                                                                |
+| ------------- | -------- | -------------------------------------------------------------------------- |
+| `displayName` | No       | Human-readable name shown to users. Falls back to `name` if not set        |
+| `category`    | Yes      | One of: `streaming`, `metadata`, `lyrics`, `scrobbling`, `ui`, `other`     |
+| `icon`        | No       | Plugin icon. Currently only `{"type": "link", "link": "url"}` is supported |
+| `permissions` | No       | Informational list of permissions the plugin uses                          |
 
 ### Example package.json
 
@@ -72,3 +72,15 @@ plugin.zip
 ├── package.json    # Plugin metadata
 └── ...             # Any other files your plugin needs
 ```
+
+## Security Scan
+
+The registry scans your plugin before it publishes it. The scan examines the latest release when you submit the plugin, and each new release after that.
+
+The scan holds a release when it finds one of these:
+
+- A binary file in `plugin.zip`. All files in the zip must be text files, for example JavaScript, TypeScript, JSON, or Markdown.
+- An HTTP request that does not use `api.Http.fetch`, for example the global `fetch`, `XMLHttpRequest`, or an HTTP library.
+- Malicious behavior, spyware, etc.
+
+Users do not get a held release. The maintainer examines it manually.
