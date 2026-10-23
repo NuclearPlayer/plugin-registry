@@ -1,6 +1,6 @@
 import { execFileSync } from "node:child_process";
-import { writeRegistry } from "./registry.js";
-import type { Hold, Plugin, PluginRegistry, Release } from "./types.js";
+import { writeRegistry } from "./registry";
+import type { Hold, Plugin, PluginRegistry, Release } from "./types";
 
 type GitHubAsset = {
   name: string;
@@ -21,8 +21,8 @@ function ghJson<T>(args: string[]): T {
   return JSON.parse(gh(args));
 }
 
-function git(args: string[]): void {
-  execFileSync("git", args);
+function git(args: string[]): string {
+  return execFileSync("git", args, { encoding: "utf-8" });
 }
 
 function holdBranch(id: string, version: string): string {
@@ -37,6 +37,11 @@ export function getLatestRelease(repo: string): Release {
       (asset) => asset.name === "plugin.zip" || asset.label === "plugin.zip"
     )!.browser_download_url,
   };
+}
+
+export function readPullRequestRegistry(number: string): PluginRegistry {
+  git(["fetch", "origin", `pull/${number}/head`]);
+  return JSON.parse(git(["show", "FETCH_HEAD:plugins.json"]));
 }
 
 export function hasHoldPullRequest(id: string, version: string): boolean {

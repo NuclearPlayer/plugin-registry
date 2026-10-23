@@ -1,5 +1,5 @@
 import { readFileSync, writeFileSync } from "node:fs";
-import type { PluginRegistry } from "./types.js";
+import type { PluginRegistry } from "./types";
 
 const REGISTRY_PATH = new URL("../../plugins.json", import.meta.url);
 

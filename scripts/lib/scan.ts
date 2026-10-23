@@ -3,7 +3,8 @@ import { execFileSync } from "node:child_process";
 import { randomUUID } from "node:crypto";
 import { isUtf8 } from "node:buffer";
 import { strFromU8, unzipSync, type Unzipped } from "fflate";
-import type { Hold } from "./types.js";
+import { downloadZip } from "./download";
+import type { Hold, Release } from "./types";
 
 type Verdict = {
   verdict: "clean" | "suspicious";
@@ -51,7 +52,7 @@ function runCopilot(prompt: string): Hold | undefined {
   );
 }
 
-export function scanRelease(version: string, zip: Uint8Array): Hold | undefined {
+function scanRelease(version: string, zip: Uint8Array): Hold | undefined {
   const files = unzipSync(zip);
 
   const binaryFiles = Object.keys(files).filter((name) => !isUtf8(files[name]));
@@ -60,4 +61,11 @@ export function scanRelease(version: string, zip: Uint8Array): Hold | undefined 
   }
 
   return runCopilot(buildPrompt(version, files));
+}
+
+export async function scanReleaseFrom(
+  release: Release
+): Promise<{ sha256: string; hold: Hold | undefined }> {
+  const { zip, sha256 } = await downloadZip(release.downloadUrl);
+  return { sha256, hold: scanRelease(release.version, zip) };
 }

@@ -5,6 +5,9 @@ const REPO_PATTERN = /^[a-zA-Z0-9_.-]+\/[a-zA-Z0-9_.-]+$/;
 interface Plugin {
   id: string;
   repo: string;
+  version?: string;
+  downloadUrl?: string;
+  sha256?: string;
 }
 
 interface PluginRegistry {
@@ -12,7 +15,7 @@ interface PluginRegistry {
   version?: number;
 }
 
-function getChangedRepos(baseBranch: string): string[] {
+function readRegistries(baseBranch: string): { oldPlugins: PluginRegistry; newPlugins: PluginRegistry } {
   execSync(`git fetch origin ${baseBranch} --depth=1`, { stdio: "inherit" });
 
   const oldContent = execSync(`git show origin/${baseBranch}:plugins.json`, {
@@ -22,11 +25,28 @@ function getChangedRepos(baseBranch: string): string[] {
     encoding: "utf-8",
   });
 
-  const oldPlugins: PluginRegistry = JSON.parse(oldContent);
-  const newPlugins: PluginRegistry = JSON.parse(newContent);
+  return { oldPlugins: JSON.parse(oldContent), newPlugins: JSON.parse(newContent) };
+}
 
+function getChangedRepos(oldPlugins: PluginRegistry, newPlugins: PluginRegistry): string[] {
   const oldRepos = new Set(oldPlugins.plugins.map((p) => p.repo));
   return newPlugins.plugins.filter((p) => !oldRepos.has(p.repo)).map((p) => p.repo);
+}
+
+function getAutomaticFieldErrors(oldPlugins: PluginRegistry, newPlugins: PluginRegistry): string[] {
+  return newPlugins.plugins
+    .filter((plugin) => {
+      const original = oldPlugins.plugins.find((existing) => existing.id === plugin.id);
+      return (
+        plugin.version !== original?.version ||
+        plugin.downloadUrl !== original?.downloadUrl ||
+        plugin.sha256 !== original?.sha256
+      );
+    })
+    .map(
+      (plugin) =>
+        `${plugin.id}: version, downloadUrl and sha256 are filled in automatically after the plugin is merged. Remove them from your entry.`
+    );
 }
 
 function gh(args: string): string {
@@ -98,16 +118,20 @@ if (!baseBranch) {
   process.exit(1);
 }
 
-const changedRepos = getChangedRepos(baseBranch);
+const { oldPlugins, newPlugins } = readRegistries(baseBranch);
+
+const fieldErrors = getAutomaticFieldErrors(oldPlugins, newPlugins);
+fieldErrors.forEach((error) => console.error(`::error::${error}`));
+
+let failed = fieldErrors.length > 0;
+
+const changedRepos = getChangedRepos(oldPlugins, newPlugins);
 
 if (changedRepos.length === 0) {
   console.log("No new plugins detected");
-  process.exit(0);
+} else {
+  console.log(`Checking ${changedRepos.length} plugin(s)\n`);
 }
-
-console.log(`Checking ${changedRepos.length} plugin(s)\n`);
-
-let failed = false;
 
 for (const repo of changedRepos) {
   console.log(`${repo}:`);

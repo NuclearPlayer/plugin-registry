@@ -1,8 +1,7 @@
-import { downloadZip } from "./lib/download.js";
-import { getLatestRelease, hasHoldPullRequest, openHoldPullRequest } from "./lib/github.js";
-import { readRegistry, writeRegistry } from "./lib/registry.js";
-import { scanRelease } from "./lib/scan.js";
-import type { Plugin, PluginRegistry } from "./lib/types.js";
+import { getLatestRelease, hasHoldPullRequest, openHoldPullRequest } from "./lib/github";
+import { readRegistry, writeRegistry } from "./lib/registry";
+import { scanReleaseFrom } from "./lib/scan";
+import type { Plugin, PluginRegistry } from "./lib/types";
 
 type UpdateResult = { plugin: Plugin; failed: boolean };
 
@@ -20,9 +19,8 @@ async function updatePlugin(registry: PluginRegistry, plugin: Plugin): Promise<U
       return { plugin, failed: false };
     }
 
-    const { zip, sha256 } = await downloadZip(release.downloadUrl);
+    const { sha256, hold } = await scanReleaseFrom(release);
     const updated = { ...plugin, ...release, sha256 };
-    const hold = scanRelease(release.version, zip);
 
     if (hold) {
       openHoldPullRequest(registry, updated, hold);
