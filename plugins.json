@@ -503,7 +503,10 @@
         "self-hosted",
         "library"
       ],
-      "addedAt": "2026-10-26T00:00:00Z"
+      "addedAt": "2026-10-26T00:00:00Z",
+      "version": "0.6.2",
+      "downloadUrl": "https://github.com/cbrunie/nuclear-plugin-subsonic/releases/download/v0.6.2/plugin.zip",
+      "sha256": "d1efdb923d8e107d034361b1934058508b034299f7171006e4c60d9f71d356be"
     }
   ],
   "version": 1
