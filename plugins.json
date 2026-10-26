@@ -479,6 +479,31 @@
       "downloadUrl": "https://github.com/EvgenchikS2/Nuclear_Player_txt_queue/releases/download/v1.0.2/plugin.zip",
       "addedAt": "2026-10-03T00:00:00Z",
       "sha256": "895e06f9195df7e1ab6602f397117f07e6d66c1a8cc34189713c638fd4cfb8f4"
+    },
+    {
+      "id": "nuclear-plugin-subsonic",
+      "name": "Subsonic",
+      "description": "Your Subsonic/OpenSubsonic library (Navidrome, Gonic, Airsonic…): search, streaming, lyrics, dashboard, discovery, synced playlists and favorites, scrobbling.",
+      "author": "cbrunie",
+      "repo": "cbrunie/nuclear-plugin-subsonic",
+      "category": "streaming",
+      "categories": [
+        "streaming",
+        "metadata",
+        "playlists",
+        "lyrics",
+        "scrobbling",
+        "dashboard",
+        "discovery"
+      ],
+      "tags": [
+        "subsonic",
+        "opensubsonic",
+        "navidrome",
+        "self-hosted",
+        "library"
+      ],
+      "addedAt": "2026-10-26T00:00:00Z"
     }
   ],
   "version": 1
