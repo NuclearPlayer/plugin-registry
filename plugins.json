@@ -368,10 +368,10 @@
         "yt-dlp",
         "audio"
       ],
-      "version": "1.1.0",
-      "downloadUrl": "https://github.com/JonyDevProjects/yt-provider/releases/download/v1.1.0/plugin.zip",
+      "version": "1.2.0",
+      "downloadUrl": "https://github.com/JonyDevProjects/yt-provider/releases/download/v1.2.0/plugin.zip",
       "addedAt": "2026-08-21T00:00:00Z",
-      "sha256": "ba8a34051abb9a0588ab0c19bda4c1d28e519fc6f19bcd77b016b5779ddce126"
+      "sha256": "a115d91691814c966d90c12c94778643a2ae2c07288e1f98495a1294c5800a60"
     },
     {
       "id": "nuclear-mini-player",
