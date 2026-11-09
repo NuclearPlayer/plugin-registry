@@ -430,10 +430,10 @@
         "chinese",
         "translation"
       ],
-      "version": "0.1.0",
-      "downloadUrl": "https://github.com/NuclearPlayer/nuclear-plugin-kugou/releases/download/v0.1.0/plugin.zip",
+      "version": "0.1.1",
+      "downloadUrl": "https://github.com/NuclearPlayer/nuclear-plugin-kugou/releases/download/v0.1.1/plugin.zip",
       "addedAt": "2026-10-05T00:00:00Z",
-      "sha256": "8525156cb91ccb3fc4ce766c6c2f6763cd89e719c67d714be4ed9ca088e73bb6"
+      "sha256": "2e41866da158cf41253772a5ec292d9f151d417b0d530efabed4820075111d6f"
     },
     {
       "id": "nuclear-plugin-spotify-home",
