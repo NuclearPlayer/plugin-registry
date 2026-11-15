@@ -450,7 +450,10 @@
         "word-synced-lyrics",
         "lrc-red"
       ],
-      "addedAt": "2026-11-15T00:00:00Z"
+      "addedAt": "2026-11-15T00:00:00Z",
+      "version": "0.1.0",
+      "downloadUrl": "https://github.com/NuclearPlayer/nuclear-plugin-lrc-red/releases/download/v0.1.0/plugin.zip",
+      "sha256": "57cacd50e674ebce98be1cc3f11bfdc3d42fcec35d6216273d26734ce5d1d94c"
     },
     {
       "id": "nuclear-plugin-spotify-home",
