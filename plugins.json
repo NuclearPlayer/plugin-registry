@@ -436,6 +436,23 @@
       "sha256": "2e41866da158cf41253772a5ec292d9f151d417b0d530efabed4820075111d6f"
     },
     {
+      "id": "nuclear-plugin-lrc-red",
+      "name": "lrc.red",
+      "description": "Lyrics plugin using lrc.red, with word-synced lyrics",
+      "author": "nukeop",
+      "repo": "NuclearPlayer/nuclear-plugin-lrc-red",
+      "categories": [
+        "lyrics"
+      ],
+      "tags": [
+        "lyrics",
+        "synced-lyrics",
+        "word-synced-lyrics",
+        "lrc-red"
+      ],
+      "addedAt": "2026-11-15T00:00:00Z"
+    },
+    {
       "id": "nuclear-plugin-spotify-home",
       "name": "Home & Liked Songs for Spotify",
       "description": "Spotify home in Nuclear: your Daily Mixes, new releases from your artists, Top 50 charts and Liked Songs as sidebar tabs, plus content for the Dashboard",
