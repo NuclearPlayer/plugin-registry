@@ -357,23 +357,25 @@
     },
     {
       "id": "nuclear-mini-player",
-      "name": "Nuclear Mini Player",
-      "description": "A feature-rich mini player with synced lyrics, artwork controls, queue access, and MediaSession support.",
-      "author": "visa",
+      "name": "Mini Player",
+      "description": "Floating and detachable mini player with synced lyrics, queue/playlists, theme sync, and media controls",
+      "author": "visadaking",
       "repo": "visadaking/nuclear-mini-player",
       "categories": [
         "lyrics",
         "other"
       ],
       "tags": [
-        "miniplayer",
         "lyrics",
-        "media",
-        "queue"
+        "mini-player",
+        "synced-lyrics",
+        "queue",
+        "media-controls"
       ],
-      "version": "1.7.8",
-      "downloadUrl": "https://github.com/visadaking/nuclear-mini-player/releases/download/v1.7.8/plugin.zip",
-      "addedAt": "2026-09-05T00:28:04.288156Z"
+      "version": "1.9.1",
+      "downloadUrl": "https://github.com/visadaking/nuclear-mini-player/releases/download/v1.9.1/plugin.zip",
+      "addedAt": "2026-09-06T00:00:00Z",
+      "sha256": "bade7a1a78c3369af4e0adb041bc3e632e89bb4c8b1617215465191acc1e58fc"
     }
   ],
   "version": 1
