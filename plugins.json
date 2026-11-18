@@ -456,6 +456,23 @@
       "sha256": "57cacd50e674ebce98be1cc3f11bfdc3d42fcec35d6216273d26734ce5d1d94c"
     },
     {
+      "id": "nuclear-plugin-qq-music",
+      "name": "QQ Music",
+      "description": "Lyrics plugin using QQ Music",
+      "author": "nukeop",
+      "repo": "NuclearPlayer/nuclear-plugin-qq-music",
+      "categories": [
+        "lyrics"
+      ],
+      "tags": [
+        "lyrics",
+        "synced-lyrics",
+        "word-synced-lyrics",
+        "qq-music"
+      ],
+      "addedAt": "2026-11-18T00:00:00Z"
+    },
+    {
       "id": "nuclear-plugin-spotify-home",
       "name": "Home & Liked Songs for Spotify",
       "description": "Spotify home in Nuclear: your Daily Mixes, new releases from your artists, Top 50 charts and Liked Songs as sidebar tabs, plus content for the Dashboard",
