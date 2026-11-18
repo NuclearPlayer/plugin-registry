@@ -470,7 +470,10 @@
         "word-synced-lyrics",
         "qq-music"
       ],
-      "addedAt": "2026-11-18T00:00:00Z"
+      "addedAt": "2026-11-18T00:00:00Z",
+      "version": "0.1.0",
+      "downloadUrl": "https://github.com/NuclearPlayer/nuclear-plugin-qq-music/releases/download/v0.1.0/plugin.zip",
+      "sha256": "f2c7d1363222f9e765c38f39f17c9dcff316d404df77442d8380d17412e9cc83"
     },
     {
       "id": "nuclear-plugin-spotify-home",
