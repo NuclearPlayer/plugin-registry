@@ -476,6 +476,25 @@
       "sha256": "f2c7d1363222f9e765c38f39f17c9dcff316d404df77442d8380d17412e9cc83"
     },
     {
+      "id": "nuclear-plugin-monochrome",
+      "name": "Monochrome",
+      "description": "Metadata and lossless streaming from Monochrome",
+      "author": "nukeop",
+      "repo": "NuclearPlayer/nuclear-plugin-monochrome",
+      "categories": [
+        "metadata",
+        "streaming"
+      ],
+      "tags": [
+        "metadata",
+        "streaming",
+        "lossless",
+        "flac",
+        "monochrome"
+      ],
+      "addedAt": "2026-11-19T00:00:00Z"
+    },
+    {
       "id": "nuclear-plugin-spotify-home",
       "name": "Home & Liked Songs for Spotify",
       "description": "Spotify home in Nuclear: your Daily Mixes, new releases from your artists, Top 50 charts and Liked Songs as sidebar tabs, plus content for the Dashboard",
