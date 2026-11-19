@@ -492,7 +492,10 @@
         "flac",
         "monochrome"
       ],
-      "addedAt": "2026-11-19T00:00:00Z"
+      "addedAt": "2026-11-19T00:00:00Z",
+      "version": "1.0.0",
+      "downloadUrl": "https://github.com/NuclearPlayer/nuclear-plugin-monochrome/releases/download/v1.0.0/plugin.zip",
+      "sha256": "5eb0775cd4ed3937ac4d85552bc6a18f16d363cc66c4f951256b57e46843ae17"
     },
     {
       "id": "nuclear-plugin-spotify-home",
