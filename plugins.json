@@ -390,10 +390,10 @@
         "lrclib",
         "media-controls"
       ],
-      "version": "1.9.1",
-      "downloadUrl": "https://github.com/visadaking/nuclear-mini-player/releases/download/v1.9.1/plugin.zip",
+      "version": "1.9.2",
+      "downloadUrl": "https://github.com/visadaking/nuclear-mini-player/releases/download/v1.9.2/plugin.zip",
       "addedAt": "2026-09-06T00:00:00Z",
-      "sha256": "bade7a1a78c3369af4e0adb041bc3e632e89bb4c8b1617215465191acc1e58fc"
+      "sha256": "3f9b68e56ea1c3896ef79e12bf5d7efb70f7af774eddc77f63adbf9a185c5e11"
     },
     {
       "id": "nuclear-plugin-lrclib",
