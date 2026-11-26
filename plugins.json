@@ -545,7 +545,7 @@
     {
       "id": "nuclear-plugin-subsonic",
       "name": "Subsonic",
-      "description": "Your Subsonic/OpenSubsonic library (Navidrome, Gonic, Airsonic…): search, streaming, lyrics, dashboard, discovery, synced playlists and favorites, scrobbling.",
+      "description": "Your Subsonic/OpenSubsonic library (Navidrome, Gonic, Airsonic\u2026): search, streaming, lyrics, dashboard, discovery, synced playlists and favorites, scrobbling.",
       "author": "cbrunie",
       "repo": "cbrunie/nuclear-plugin-subsonic",
       "category": "streaming",
@@ -569,6 +569,44 @@
       "version": "0.6.2",
       "downloadUrl": "https://github.com/cbrunie/nuclear-plugin-subsonic/releases/download/v0.6.2/plugin.zip",
       "sha256": "d1efdb923d8e107d034361b1934058508b034299f7171006e4c60d9f71d356be"
+    },
+    {
+      "id": "nuclear-plugin-spotify-account-sync",
+      "name": "Spotify Account Sync",
+      "description": "Sync public Spotify profile playlists and playlist URLs into Nuclear with no login or API keys required",
+      "author": "ivan-petrovich1",
+      "repo": "ivan-petrovich1/nuclear-plugin-spotify-account-sync",
+      "category": "playlists",
+      "categories": [
+        "playlists"
+      ],
+      "tags": [
+        "spotify",
+        "playlists",
+        "sync",
+        "import"
+      ],
+      "addedAt": "2026-11-27T00:00:00Z"
+    },
+    {
+      "id": "nuclear-plugin-mini-lyrics",
+      "name": "Mini Lyrics Player",
+      "description": "Floating live synced lyrics bar and expandable mini lyrics card with click-to-seek, playback controls, timing offset, and LRCLIB fallback",
+      "author": "ivan-petrovich1",
+      "repo": "ivan-petrovich1/nuclear-plugin-mini-lyrics",
+      "category": "lyrics",
+      "categories": [
+        "lyrics",
+        "other"
+      ],
+      "tags": [
+        "lyrics",
+        "synced-lyrics",
+        "mini-player",
+        "overlay",
+        "lrclib"
+      ],
+      "addedAt": "2026-11-27T00:00:00Z"
     }
   ],
   "version": 1
