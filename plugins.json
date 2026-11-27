@@ -545,7 +545,7 @@
     {
       "id": "nuclear-plugin-subsonic",
       "name": "Subsonic",
-      "description": "Your Subsonic/OpenSubsonic library (Navidrome, Gonic, Airsonic\u2026): search, streaming, lyrics, dashboard, discovery, synced playlists and favorites, scrobbling.",
+      "description": "Your Subsonic/OpenSubsonic library (Navidrome, Gonic, Airsonic…): search, streaming, lyrics, dashboard, discovery, synced playlists and favorites, scrobbling.",
       "author": "cbrunie",
       "repo": "cbrunie/nuclear-plugin-subsonic",
       "category": "streaming",
