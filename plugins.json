@@ -591,7 +591,7 @@
     {
       "id": "nuclear-plugin-mini-lyrics",
       "name": "Mini Lyrics Player",
-      "description": "Floating live synced lyrics bar and expandable mini lyrics card with click-to-seek, playback controls, timing offset, and LRCLIB fallback",
+      "description": "Live synced lyric ticker bar docked above Nuclear's player bar with click-to-open lyrics, bar toggle, and LRCLIB fallback",
       "author": "ivan-petrovich1",
       "repo": "ivan-petrovich1/nuclear-plugin-mini-lyrics",
       "category": "lyrics",
@@ -602,9 +602,8 @@
       "tags": [
         "lyrics",
         "synced-lyrics",
-        "mini-player",
-        "overlay",
-        "lrclib"
+        "lrclib",
+        "player-bar"
       ],
       "addedAt": "2026-11-27T00:00:00Z"
     }
